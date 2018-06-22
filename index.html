@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- linking to styles -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Kariuki's portfolio</title>
+		<link rel="icon"  class="fas fa-atlas">
+		<link rel="stylesheet" type="text/css" href="font/">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- link to fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!-- link to Jquery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- link to fontawesome to use their glyphicons -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+		<style>
+		body {
+		font: 20px Montserrat, sans-serif;
+		line-height: 1.8;
+		color: #f5f6f7;
+		}
+		p {font-size: 16px;}
+		.margin {margin-bottom: 45px;}
+		.bg-1 {
+		background: rgb(146,109,152);
+		background: linear-gradient(90deg, rgba(146,109,152,1) 0%, rgba(116,116,116,1) 100%);
+		}
+		.bg-2 {
+		background: rgb(68,128,119);
+		background: linear-gradient(90deg, rgba(68,128,119,1) 0%, rgba(61,119,109,1) 37%, rgba(71,78,93,1) 100%);
+		color: #ffffff;
+		}
+		.bg-3 {
+		background: rgb(255,255,255);
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(45,111,83,1) 100%);
+		color: #555555;
+		}
+		.bg-4 {
+		background: rgb(210,201,201);
+		background: linear-gradient(302deg, rgba(210,201,201,1) 6%, rgba(237,233,233,1) 31%, rgba(254,195,195,1) 54%, rgba(177,74,74,1) 100%);/* Black Gray */
+		color: #fff;
+		}
+		.bg-4 a {
+		text-decoration: none;
+		}
+		.logo-android {
+				color: #00b300;
+				font-size: 50px;
+		}.logo-java {
+				color: #f4511e;
+				font-size: 50px;
+		}.logo-python {
+				color:  #3385ff;
+				font-size: 50px;
+				}
+		.logo-js {
+				color: #ffff4d;
+				font-size: 50px;
+				}
+		.logo-git {
+				color:  #000;
+				font-size: 50px;
+				transition: transform .2s;
+				padding: 20px;
+				}
+		.logo-git:hover {
+		transform: scale(1.5)
+		}
+		.logo-in {
+				color:  #3385ff;
+				font-size: 50px;
+				transition: transform .2s;
+				padding: 20px;
+				}
+		.logo-in:hover {
+		transform: scale(1.5)
+		}
+		.logo-ins {
+				
+				font-size: 50px;
+				padding: 20px;
+				transition: transform .2s;
+				color : rgb(255,255,255);
+				color:  linear-gradient(302deg, rgba(246,103,210,1) 6%, rgba(237,233,233,1) 42%, rgba(254,195,195,1) 54%, rgba(226,28,28,1) 100%);
+				}
+		.logo-ins:hover {
+		transform: scale(1.5)
+		}
+		.container-fluid {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		}
+		.navbar {
+		border: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+		font-size: 12px;
+		letter-spacing: 5px;
+		width:100%;
+		height:65px;
+		top:0 px;
+		position:absolute;
+		z-index:999;
+		opacity:0.6;
+		}
+		.containr {
+		padding-top: 0px;
+		padding-right: 15%;
+		padding-left: 15%;
+		padding-bottom: 0px;
+		}
+		.navbar-nav  li a:hover {
+		color: #1abc9c !important;
+		}
+		.progress{
+			padding:2px;
+			height: 20px;  /* Can be anything */
+			position: relative;
+			background: #d9d9d9;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius: 25px;
+			box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+				}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">My Portfolio</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#page1">HOME</a></li>
+						<li><a href="#page2">ABOUT ME</a></li>
+						<li><a href="#page3/slide3-1">SKILLS</a></li>
+						<!-- <li><a href="#page3/slide3-2">Page 3-2</a></li>
+						<li><a href="#page3/slide3-3">Page 3-3</a></li> -->
+						<li><a href="#page4">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- website container -->
+		<div id="wrapper">
+			<!-- first container -->
+			<div class="section bg-1 "data-anchor="page1">
+				<div class=" container-fluid  text-center" >
+					<h3 class="margin">Eric Kariuki Kimani</h3>
+					<img src="res/me1.jpg" class="bg-1 img-responsive margin" style="display:inline;border-radius: 20px;background-color: yellow;" alt="my image" width="20%" height="20%" >
+					<h3>I'm a developer</h3>
+				</div>
+			</div>
+			<!-- second container -->
+			<div class="section container-fluid bg-2  text-center" data-anchor="page2">
+				<h3 class="text-center margin">What Am I?</h3>
+				<div class=" containr">
+					<p style="
+						line-height:250%;
+						word-spacing: 13%;
+					letter-spacing: 1.8px;">I'm a curious and versatile Software Engineering student dedicated to bringing cool experiences to life. I enjoy playing around with code, constantly trying out new things, tools, languages and frameworks to solve problems, working at the intersection of technology and creativity. </p>
+				</div>
+			</div>
+			<!-- skills container -->
+			<div class="section" data-anchor="page3">
+				<!-- android container -->
+				<div class="slide bg-3" data-anchor="slide3-1">
+					<div class="container-fluid  text-center">
+						<h2>SKILLS</h2>
+						<h4>What I am still learning...</h4>
+						<br>
+						<div class="row">
+							<div class="text-center">
+								<span class="logo-android" ><i class="fab fa-android"></i></span>
+								<h4>ANDROID</h4>
+								<div style="padding-top: 20px">
+									<div class="progress center-block text-center" style="width:80%;">
+										<div class="progress-bar  progress-bar-striped active" role="progressbar"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:53%"> 53%
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- java container -->
+				<div class="slide bg-3" data-anchor="slide3-2">
+					<div class="container-fluid  text-center">
+						<h2>SKILLS</h2>
+						<h4>What I am still learning...</h4>
+						<br>
+						<div class="row">
+							<div class="text-center">
+								<span class="logo-java" ><i class="fab fa-java"></i></span>
+								<h4>JAVA</h4>
+								<div style="padding-top: 20px">
+									<div class="progress center-block text-center" style="width:80%;">
+										<div class="progress-bar  progress-bar-striped active" role="progressbar"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:53%"> 53%
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- python container -->
+				<div class="slide bg-3" data-anchor="slide3-3">
+					<div class="container-fluid  text-center">
+						<h2>SKILLS</h2>
+						<h4>What I am still learning...</h4>
+						<br>
+						<div class="row">
+							<div class="text-center">
+								<span class="logo-python" ><i class="fab fa-python"></i></span>
+								<h4>PYTHON</h4>
+								<div style="padding-top: 20px">
+									<div class="progress center-block text-center" style="width:80%;">
+										<div class="progress-bar  progress-bar-striped active" role="progressbar"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:53%"> 53%
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide bg-3" data-anchor="slide3-4">
+					<div class="container-fluid  text-center">
+						<h2>SKILLS</h2>
+						<h4>What I am still learning...</h4>
+						<br>
+						<div class="row">
+							<div class="text-center">
+								<span class="logo-js" ><i class="fab fa-js"></i></span>
+								<h4>JAVASCRIPT</h4>
+								<div style="padding-top: 20px">
+									<div class="progress center-block text-center" style="width:80%;">
+										<div class="progress-bar  progress-bar-striped active" role="progressbar"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:45%"> 45%
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- contacts container -->
+			<div class="section bg-4" data-anchor="page4">
+				<h3 class="text-center" style=" color: #000;">Contact me</h3>
+				<div class="text-center">
+					<a class="fab fa-github logo-git" target="_blank" href="https://github.com/Carrieukie"></a>
+					<a class="fab fa-linkedin logo-in" target="_blank" href="www.linkedin.com/in/eric-kariuki-karis"></a>
+					<a class="fab fa-instagram logo-ins" target="_blank" href="https://www.instagram.com/carrieukie/"></a>
+				</div>
+				<div class="text-center ">
+					<ul style="
+						list-style-type: none; color: #000">
+						<li>Email:kariuki931@gmail.com</li>
+						<li>phone:+254710102720</li>
+					</ul>
+				</div>
+			
+				<br>
+				<footer class="text-center">
+					<p style="
+						list-style-type: none; color: #000">I'm currently available for an Internship</p>
+				</footer>
+			</div>
+		</div>
+		<script>
+		$(document).ready(function(){
+			$('#wrapper').fullpage();
+		});
+		</script>
+	</body>
+</html>
